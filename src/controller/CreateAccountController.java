@@ -2,7 +2,6 @@ package controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -28,6 +27,7 @@ public class CreateAccountController implements Initializable {
 	@FXML TextField createanswer;
 	@FXML Label createlabelstatus;
 	@FXML DatePicker createdateofbirth;
+	//Button
 	public void createaccount(ActionEvent event) throws Exception {
 		if(loginModel.isregister(createname.getText(),createusername.getText(),createemail.getText(),createpassword.getText(),createcombobox.getSelectionModel().getSelectedItem(),createanswer.getText())) {
 				createlabelstatus.setText("Account Created");
@@ -43,7 +43,7 @@ public class CreateAccountController implements Initializable {
 				createlabelstatus.setText("Enter Valid Details");
 			}
 	}
-	
+	//Hyperlink 
 	public void alreadyregisteredclickhere(ActionEvent event) throws Exception {
 		((Node)event.getSource()).getScene().getWindow().hide();
 		Stage primaryStage = new Stage();
@@ -54,6 +54,7 @@ public class CreateAccountController implements Initializable {
 		primaryStage.setTitle("JavaFx Application");
 		primaryStage.show();
 	}
+	//ComboBox
 	@FXML public ComboBox<String> createcombobox;
 	ObservableList<String> list = FXCollections.observableArrayList("What was your First book?","What's your Wife DOB?","What was your First Pet?","Who was your first Love?");
 	@Override
