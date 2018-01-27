@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAccountController">
+   <children>
+      <Label layoutX="164.0" layoutY="22.0" text="Create Account">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="156.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="115.0" text="Username :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="76.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="198.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="241.0" text="Question :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="280.0" text="Answer :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="createname" layoutX="140.0" layoutY="74.0" minHeight="10.0" prefWidth="220.0" promptText="Enter your Name" />
+      <TextField fx:id="createusername" layoutX="140.0" layoutY="113.0" prefWidth="220.0" promptText="Enter your Username" />
+      <TextField fx:id="createemail" layoutX="140.0" layoutY="154.0" prefWidth="220.0" promptText="Enter your Email Address" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="408.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/create.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="createlabelstatus" alignment="CENTER" layoutX="391.0" layoutY="267.0" prefHeight="23.0" prefWidth="184.0" text="Account Status" textFill="#fc1803">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="createpassword" layoutX="140.0" layoutY="196.0" prefWidth="220.0" promptText="Enter your Password" />
+      <ComboBox fx:id="createcombobox" layoutX="140.0" layoutY="239.0" prefWidth="220.0" promptText="Select your Security Question ?" />
+      <TextField fx:id="createanswer" layoutX="140.0" layoutY="278.0" prefWidth="220.0" promptText="Enter your Security Answer" />
+      <Button layoutX="140.0" layoutY="321.0" mnemonicParsing="false" onAction="#createaccount" prefWidth="220.0" text="Create Account">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="391.0" layoutY="239.0" onAction="#alreadyregisteredclickhere" text="Already Registered ? Click Here">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Hyperlink>
+      <DatePicker fx:id="createdateofbirth" layoutX="396.0" layoutY="300.0" promptText="Select your DOB" />
+   </children>
+</AnchorPane>
