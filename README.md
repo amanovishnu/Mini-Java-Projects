@@ -1,8 +1,6 @@
 # JavaFx-LoginTemplate
 
-Link for JDBC Driver: [MySQL  JDBC Driver](https://dev.mysql.com/downloads/connector/j/5.1.html)
-Link for e(fx)clipse Plugin: [e(fx)clipse](http://download.eclipse.org/efxclipse/updates-released/2.3.0/site/)
-Link for Gluon Scene Builder: [Scene Builder](http://gluonhq.com/products/scene-builder/#download)
+Tools Used: Eclipse Jee, Mysql JDBC Driver, Scene Builder
 1. Link for JDBC Driver: [MySQL  JDBC Driver](https://dev.mysql.com/downloads/connector/j/5.1.html)
 2. Link for e(fx)clipse Plugin: [e(fx)clipse](http://download.eclipse.org/efxclipse/updates-released/2.3.0/site/)
 3. Link for Gluon Scene Builder: [Scene Builder](http://gluonhq.com/products/scene-builder/#download)
