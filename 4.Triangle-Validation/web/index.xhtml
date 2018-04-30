@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Triangle</title>
+    </h:head>
+    <h:body>
+        <fieldset>
+        <h:form>
+            <h1>Simple Triangle</h1>    
+        <h:panelGrid columns="6">
+            <h:outputLabel value="AB:" style="color:black"/>
+            <h:inputText id="sideA" style="color:black;text-align:right" value="#{triangle.sideA}"/>
+            <h:outputLabel value="BC:" style="color:black"/>
+            <h:inputText id="sideB" style="color:black;text-align:right" value="#{triangle.sideB}"/>
+            <h:outputLabel value="CA:" style="color:black"/>
+            <h:inputText id="sideC" style="color:black;text-align:right" value="#{triangle.sideC}"/>
+        </h:panelGrid>
+        <br/>
+        <br/>
+        <h:panelGrid columns="5">
+            <h:commandButton value="Area" action="#{triangle.Area()}"/>
+            <h:commandButton value="Perimeter" action="#{triangle.Perimeter()}"/>
+            <h:commandButton value="Angle A" action="#{triangle.AngleA()}"/>
+            <h:commandButton value="Angle B" action="#{triangle.AngleB()}"/>
+            <h:commandButton value="Angle C" action="#{triangle.AngleC()}"/>
+        </h:panelGrid>
+        <br/>
+        <br/>
+        
+        <h3>Results:</h3>
+        <br/>
+        <br/>
+        <h:panelGrid columns="6">
+            <h:outputLabel value="Angle A:" style="color:black"/>
+            <h:inputText id="result1" style="color:black" value="#{triangle.result1}"/>
+            <h:outputLabel value="Angle B:" style="color:black"/>
+            <h:inputText id="result2" style="color:black" value="#{triangle.result2}"/>
+            <h:outputLabel value="Angle C:" style="color:black"/>
+            <h:inputText id="result3" style="color:black" value="#{triangle.result3}"/>
+        </h:panelGrid>
+        <br/>
+        <br/>
+        <h:panelGrid columns="4">
+            <h:outputLabel value="Area:" style="color:black"/>
+            <h:inputText id="result4" style="color:black" value="#{triangle.result4}"/>
+            <h:outputLabel value="Perimeter:" style="color:black"/>
+            <h:inputText id="result5" style="color:black" value="#{triangle.result5}"/>
+        </h:panelGrid>
+        <br/>
+        <br/>
+        <h:outputText value="#{triangle.response}"/>
+        </h:form>
+        </fieldset>
+    </h:body>
+</html>
+
