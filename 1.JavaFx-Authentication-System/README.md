@@ -1,4 +1,4 @@
-# JavaFx-LoginTemplate
+# JavaFx-Authentication-System
 
 * Tools Used: Eclipse-Jee, Mysql-JDBC-Driver, Scene-Builder 
 * Language Used: Java
