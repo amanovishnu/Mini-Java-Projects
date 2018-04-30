@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron text-center" style="padding:5px">
+            <h1>
+                <b>Student Registration</b>
+            </h1>
+            <p>Welcome to Student Registration Page </p>
+        </div>
+        <form action="RegisterServlet" method="post">
+            <div class="container">		
+                <h3 style="color:#ff3333">Student Information:</h3>
+                <br>
+                <div class ="row form-group">
+                    <div class="col-sm-4">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="firstname" class="form-control" placeholder="Enter your First Name" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="mname">Middle Name:</label>
+                        <input type="text" id="mname" name="middlename" class="form-control" placeholder="Enter your Middle Name" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lastname" class="form-control" placeholder="Enter your last Name" required="required"/>
+                    </div>
+                </div>	
+                <div class="row form-group">
+                    <div class="col-sm-4">
+                        <label for="anum">Aadhar Number:</label>
+                        <input type="text" id="anum" name="aadharnumber" class="form-control" placeholder="Enter your 12 Digit Aadhar Number" maxlength="12" minlength="10" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="stuemail">Student Mail:</label>
+                        <input type="text" id="stubail" name="studentemail" class="form-control" placeholder="Enter your Email Address" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dateofbirth" class="form-control" required="required"/>
+                    </div>
+                </div>		
+                <br>
+                <h3 style="color:#ff3333">Parent's Information:</h3>
+                <br>
+                <div class="row form-group">
+                    <div class="col-sm-4">
+                        <label for="fatname">Father Name:</label>
+                        <input type="text" id="fatname" name="fathername" class="form-control" placeholder="Enter your Father Name" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="motname">Mother Name:</label>
+                        <input type="text" id="motname" name="mothername" class="form-control" placeholder="Enter your Mother Name" required="required"/>
+                    </div>
+                </div>
+                <br>
+                <h3 style="color:#ff3333">Contact Information:</h3>
+                <br>
+                <div class ="row form-group">
+                    <div class="col-sm-4">
+                        <label for="stunum">Student Number:</label>
+                        <input type="text" id="stunum" name="studentnumber" class="form-control" maxlength="12" placeholder="Enter your Mobile Number" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="fatnum">Father Number:</label>
+                        <input type="text" id="fatnum" name="fathernumber" class="form-control" maxlength="12" placeholder="Enter your Father Mobile Number" required="required"/>
+                    </div>
+                    <div class="col-sm-4">	
+                        <label for="motnum">Mother Number:</label>
+                        <input type="text" id="motnum" name="mothernumber" class="form-control" maxlength="12" placeholder="Enter your Mother Mobile Number" required="required"/>
+                    </div>
+                </div>
+                <br>
+                <h3 style="color:#ff3333">Address Information:</h3>
+                <br>
+                <div class="row form-group">
+                    <div class="col-sm-4">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" class="form-control" placeholder="Enter your Country Name" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" class="form-control" placeholder="Enter your State Name" required="required"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="pincode">Pincode:</label>
+                        <input type="text" name="pincode" class="form-control" placeholder="Enter your PinCode" required="required"/>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-8">
+                        <label for="streetadd">Street Address:</label>
+                        <textarea id="subject" name="streetaddress" placeholder="Write something.." class="form-control" style="height:110px;"  required="required"></textarea>
+                    </div>
+                </div>
+                <br>
+                <h3 style="color:#ff3333">Course Information:</h3>
+                <br>
+                <div class="row form-group">
+                    <div class="col-sm-4">
+                        <label for="major">Major: (Select one)</label><br>
+                        <select class="form-control" name="major">
+                            <option >Physics</option>
+                            <option >Chemistry</option>
+                            <option >Computer Science</option>
+                            <option >Electronics</option>  
+                            <option >Mechanical</option>  
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="major">Minor: (Select Max two)</label><br>
+                        <select class="form-control" name="minor" multiple data-max-options="2">
+                            <option >Sanskrit</option>
+                            <option >Telugu</option>
+                            <option >Tamil</option>
+                            <option >Oriya</option> 
+                        </select>	
+                    </div>
+                </div>
+                <br><br>
+                <input type="submit" value="Submit" class="btn btn-primary  btn-block">
+                <br><br>
+            </div>	
+        </form>	
+    </body>
+</html>

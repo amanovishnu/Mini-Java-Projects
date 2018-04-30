@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Verification</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron text-center" style="padding:5px">
+            <h1>
+                <b>Student Registration</b>
+            </h1>
+            <p>Welcome to Student Registration Page </p>
+        </div>
+        <form action="checkservlet" method="get">
+            <div class="container">
+                <div class="row form-group">
+                    <div class="col-sm-4" style="text-align:center; margin-left:35%;margin-top:110px">
+                        <label for="aadharnumber" align="middle">Enter your Aadhar Number:</label>
+                        <input type="text" name="aadharnumber" class="form-control" required="required" maxlength=12">
+                        <br>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
