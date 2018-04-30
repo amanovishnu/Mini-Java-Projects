@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <form action="createUser" method="post">
+            <h1>User Registration to the Website</h1>
+            <br/>
+            First Name: <input type="text" required name="FirstName"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            Last Name: <input type="text" required name="LastName"/><br/><br/>
+            Email Id: <input type="text" required name="EmailID"/><br/><br/>
+            Password: <input type="password" name="Password"  required /><br/><br/>
+            Date of Birth: <input type="date" required name="DOB"><br/><br/>
+            Username: <input type="text" required name="Username"><br/><br/>
+            Secret Question: <input type="text" required name="secretQ"/><br/><br/>
+            Secret Answer:  <input type="text" required name="secretA"/>
+            
+
+            <br/><br/>
+            <input type="submit" value="Submit"> <br/><br/>
+            
+            Already Registered? <input type="button" value="Login" onclick="location.href='login.html'"> 
+            
+        </form>
+        </center>
+    </body>
+</html>
