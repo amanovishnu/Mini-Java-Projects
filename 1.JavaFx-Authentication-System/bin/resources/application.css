@@ -1,0 +1,22 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button {
+	-fx-background-color:#1e90ff ;
+	-fx-text-fill:white;	
+	-fx-border-color:gray;
+}
+.root{
+	-fx-background-color:  #fffafa;
+}
+.Hyperlink {
+	-fx-text-fill:#1e90ff ;
+	}
+.combo-box .cell{
+    -fx-text-fill: black;
+    -fx-background-color:#fffafa;
+    -fx-border-color:#c0c0c0;
+}
+.my-list-cell {
+    -fx-text-fill: blue;
+    /* No alternate highlighting */
+    -fx-background-color: #FFF;
+}
