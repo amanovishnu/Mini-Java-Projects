@@ -1,4 +1,4 @@
-**Student-Aadahr
+#Student-Aadahr
 Create a MySql database allStudents. What information should the university gather from each student? 10 pieces of useful information are listed below. First create a user interface using an HTML form, and a corresponding table named studentRecords in allStudents. The fields of the table should conform to the fields in the HTML form, which are as follows
 1)First name, middle initial, last name [3 varchar fields]
 2)Father’s name, mother’s name [2 varchar fields]
