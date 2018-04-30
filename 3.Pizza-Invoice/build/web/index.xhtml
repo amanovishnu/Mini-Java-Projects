@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Order Pizza</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <center>
+            <h2>Order Pizza</h2>
+            <h:panelGrid columns="6">
+                <h:outputLabel value="First Name:"/>
+                <h:inputText id="fName" value="#{pizza.firstName}"/>
+                <h:outputLabel value="Middle Name"/>
+                <h:inputText id="mi"  value="#{pizza.mi}"/>
+                <h:outputLabel value="Last Name:"/>
+                <h:inputText id="lName" value="#{pizza.lastName}"/>
+               
+                <h:outputLabel value="Phone Number:"/>
+                <h:inputText id="pnumber" value="#{pizza.pnumber}"/> 
+                <br/>
+                <h:outputLabel value="Email Id:"/>
+                <h:inputText id="email" value="#{pizza.email}"/> 
+                <br/>
+                <h:outputLabel value="Address Line 1:"/>
+                <h:inputText id="addressline1" value="#{pizza.addressline1}"/> 
+                <br/>
+                <h:outputLabel value="Address Line 2:"/>
+                <h:inputText id="addressline2" value="#{pizza.addressline2}"/> 
+                <br/>
+                <h:outputLabel value="City:"/>
+                <h:inputText id="city" value="#{pizza.city}"/> 
+                <br/>
+                <h:outputLabel value="Pin:"/>
+                <h:inputText id="pin" value="#{pizza.pin}"/> 
+                
+            </h:panelGrid>
+            <br/>
+            <h:panelGrid columns="1" style="color:black">
+            <h:outputLabel value="Pizza Size: "/> 
+            
+              <h:selectOneRadio id="psize" value="#{pizza.psize}">
+                   <f:selectItem itemLabel="Small-Rs. 500" itemValue="Small"/>
+                   <f:selectItem itemLabel="Medium-Rs. 750" itemValue="Medium"/>
+                   <f:selectItem itemLabel="Large-Rs. 1000" itemValue="Large"/>
+               </h:selectOneRadio>
+            </h:panelGrid>
+            <br/>
+            <h:panelGrid columns="2" style="color:black">
+                <h:outputLabel>Pizza Ingredients: </h:outputLabel> 
+                <br/>    
+             <h:selectBooleanCheckbox>
+                    <f:selectItem/>Mushroom
+                </h:selectBooleanCheckbox>
+             <h:selectOneRadio id="mushrooms" value="#{pizza.mushrooms}">
+                   <f:selectItem itemLabel="Small(Rs. 100)" itemValue="100"/>
+                   <f:selectItem itemLabel="Medium(Rs. 125)" itemValue="125"/>
+                   <f:selectItem itemLabel="Large(Rs. 150)" itemValue="150"/>
+                   <f:selectItem itemLabel="None" itemValue="0"/>
+               </h:selectOneRadio>   
+              
+                 <h:selectBooleanCheckbox>
+                    <f:selectItem />Red Pepper
+                </h:selectBooleanCheckbox>
+                <h:selectOneRadio id="redpeppers" value="#{pizza.redpeppers}">
+                   <f:selectItem itemLabel="Small(Rs. 100)" itemValue="100"/>
+                   <f:selectItem itemLabel="Medium(Rs. 120)" itemValue="120"/>
+                   <f:selectItem itemLabel="Large(Rs. 140)" itemValue="140"/>
+                   <f:selectItem itemLabel="None" itemValue="0"/>
+               </h:selectOneRadio>
+                
+               <h:selectBooleanCheckbox>
+                    <f:selectItem />Green Olives
+                </h:selectBooleanCheckbox>
+                <h:selectOneRadio id="greenolives" value="#{pizza.greenolives}">
+                   <f:selectItem itemLabel="Small(Rs. 100)" itemValue="100"/>
+                   <f:selectItem itemLabel="Medium(Rs. 150)" itemValue="150"/>
+                   <f:selectItem itemLabel="Large(Rs. 200)" itemValue="200"/>
+                   <f:selectItem itemLabel="None" itemValue="0"/>
+                </h:selectOneRadio>
+                
+                 <h:selectBooleanCheckbox>
+                    <f:selectItem /> Pineapple
+                </h:selectBooleanCheckbox>
+                <h:selectOneRadio id="pineapple" value="#{pizza.pineapple}">
+                   <f:selectItem itemLabel="Small(Rs. 60)" itemValue="60"/>
+                   <f:selectItem itemLabel="Medium(Rs. 90)" itemValue="90"/>
+                   <f:selectItem itemLabel="Large(Rs. 120)" itemValue="120"/>
+                   <f:selectItem itemLabel="None" itemValue="0"/>
+                </h:selectOneRadio>
+                
+                <h:selectBooleanCheckbox>
+                    <f:selectItem /> Broccoli
+                </h:selectBooleanCheckbox>
+                <h:selectOneRadio id="broccoli" value="#{pizza.broccoli}">
+                   <f:selectItem itemLabel="Small(Rs. 75)" itemValue="75"/>
+                   <f:selectItem itemLabel="Medium(Rs. 125)" itemValue="125"/>
+                   <f:selectItem itemLabel="Large(Rs. 150)" itemValue="150"/>
+                   <f:selectItem itemLabel="None" itemValue="0"/>
+                </h:selectOneRadio>
+                
+               <h:selectBooleanCheckbox>
+                    <f:selectItem /> Black Olives
+                </h:selectBooleanCheckbox>
+                <h:selectOneRadio id="blackolives" value="#{pizza.blackolives}">
+                   <f:selectItem itemLabel="Small(Rs. 100)" itemValue="100"/>
+                   <f:selectItem itemLabel="Medium(Rs. 150)" itemValue="150"/>
+                   <f:selectItem itemLabel="Large(Rs. 200)" itemValue="200"/>
+                   <f:selectItem itemLabel="None" itemValue="0"/>
+               </h:selectOneRadio>
+
+            </h:panelGrid>
+            <h:commandButton value="Generate Bill"/>
+            </center>
+            <h:outputText escape="false" style="color:black" value="#{pizza.response}"/>
+        </h:form>
+    </h:body>
+</html>
+
