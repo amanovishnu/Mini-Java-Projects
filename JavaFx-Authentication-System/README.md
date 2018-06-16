@@ -8,6 +8,8 @@
 
 ![Login into Account](Snapshots/LoginScreen.JPG)
 
-![Create Account](https://github.com/amanovishnu/Mini-Java-Projects/blob/master/1%20JavaFx-Authentication-System/Snapshots/CreateAccount.JPG)
+![Create Account](Snapshots/ForgotPassword.JPG)
 
-![Forgot Password](https://github.com/amanovishnu/Mini-Java-Projects/blob/master/1%20JavaFx-Authentication-System/Snapshots/ForgotPassword.JPG)
+![Forgot Password](LoginScreen.JPG)
+
+<p align="center">Created © by Manovishnu</p>
