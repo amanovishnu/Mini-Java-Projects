@@ -10,6 +10,6 @@
 
 ![Create Account](Snapshots/ForgotPassword.JPG)
 
-![Forgot Password](LoginScreen.JPG)
+![Forgot Password](Snapshots/LoginScreen.JPG)
 
-<p align="center">Created © by Manovishnu</p>
+**<p align="center">Created © by Manovishnu</p>**
