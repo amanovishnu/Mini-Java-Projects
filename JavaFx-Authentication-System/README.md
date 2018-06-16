@@ -6,7 +6,7 @@
 2. Link for e(fx)clipse Plugin: [e(fx)clipse](http://download.eclipse.org/efxclipse/updates-released/2.3.0/site/)
 3. Link for Gluon Scene Builder: [Scene Builder](http://gluonhq.com/products/scene-builder/#download)
 
-![Login into Account](Snapshots/LoginScreen.png)
+![Login into Account](Snapshots/LoginScreen.jpg)
 
 ![Create Account](https://github.com/amanovishnu/Mini-Java-Projects/blob/master/1%20JavaFx-Authentication-System/Snapshots/CreateAccount.JPG)
 
